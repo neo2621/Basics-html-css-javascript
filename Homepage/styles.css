@@ -21,14 +21,13 @@ body{
   }
   .container{
     width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .cbackground{
     background-color: #2e2f40
   }
-  .ctext{
-    text-align: center;
-  }
- 
+
   .edit {
     background-color:green
   }
