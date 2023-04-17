@@ -4,3 +4,4 @@ function confirmation(){
         // Delete logic goes here
     }
 }
+

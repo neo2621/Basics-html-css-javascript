@@ -11,13 +11,31 @@
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="login">
-				<form>
+				<form red>
 					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Login</button>
+					<input id="email" type="email" name="email" placeholder="Email" required="">
+					<input id="password" type="password" name="pswd" placeholder="Password" required="">
+					<button onclick="auth()">Login</button>
 				</form>
 			</div>
 	</div>
+
+	<script>
+		function auth() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    if (email === "admin@gmail.com" && password === "user") {
+
+        window.location.href = "file:///C:/Users/Mpumi%20Masondo/Documents/GitHub/Basics-html-css-javascript/Homepage/index.html";
+       
+
+    } else {
+        alert("Invalid information");
+        return;
+    }
+
+}
+	</script>
 </body>
 </html>

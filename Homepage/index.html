@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-<title>Home Page</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
-    </head>
-    
+  <script src="jquery-3.6.4.min.js"></script>
+</head>
+
 <body>
-    <!-- Navigation -->
-<nav class="w3-bar w3-black icons">
-    <ion-icon name="home-outline"></ion-icon></a>
-    <a href="#G-TEAM" class="w3-bar-item"><ion-icon name="search-outline"></ion-icon></a>
-    
-    <a href="#contact" class="w3-bar-item"><ion-icon name="call-outline"></ion-icon></a>
-  </nav>
-  
-  <h2 class="text">Simple Table</h2>
+  <!-- Navigation -->
+
+  <div class="nav">
+    <nav class="w3-bar w3-black">
+      <div style="float:right">
+        <a href="#G-TEAM" class="w3-bar-item"> <ion-icon class="w-color" name="home-outline"></ion-icon></a>
+        <a href="#G-TEAM" class="w3-bar-item p-l-10"><ion-icon class="w-color" name="search-outline"></ion-icon></a>
+
+        <a href="#contact" class="w3-bar-item p-l-10"><ion-icon class="w-color" name="call-outline"></ion-icon></a>
+      </div>
+    </nav>
+  </div>
+
   <div class="container ctext cbackground">
+    <h2 class="text">Simple Table</h2>
     <table class="text">
       <tr>
         <th>Name</th>
@@ -25,90 +32,125 @@
         <th>City</th>
         <th>Action</th>
       </tr>
+      <tr id="1">
+        <td>Dakota Rice</td>
+        <td>Minerva</td>
+        <td>Germany</td>
+        <td>
+          <input type="button" id="edit-button1" value="Edit" class="edit-button edit-button" onclick="editRow('1')">
+          <input type="button" value="Delete" class="delete" onclick="deleteRow('1')">
+
+        </td>
+      </tr>
       <tr>
         <td>Dakota Rice</td>
         <td>Minerva</td>
         <td>Germany</td>
         <td>
-          <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
-          <input type="button" value="Delete" class="delete" onclick="confirmation()">
-        
-         </td>
+          <input type="button" id="edit-button1" value="Edit" class="edit-button edit-button" onclick="editRow('1')">
+          <input type="button" value="Delete" class="delete" onclick="deleteRow('1')">
+        </td>
+      </tr>
+      <tr id="2">
+        <td>Dakota Rice</td>
+        <td>Minerva</td>
+        <td>Germany</td>
+        <td>
+          <input type="button" id="edit-button1" value="Edit" class="edit-button" onclick="editRow('2')">
+          <input type="button" value="Delete" class="delete" onclick="deleteRow('2')">
+        </td>
       </tr>
       <tr>
-          <td>Dakota Rice</td>
-          <td>Minerva</td>
-          <td>Germany</td>
-          <td>
-              <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
-              <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
-             </td>
-        </tr>
-        <tr>
-          <td>Dakota Rice</td>
-          <td>Minerva</td>
-          <td>Germany</td>
-          <td>
-              <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
-              <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
-             </td>
-        </tr>
-        <tr>
-          <td>Dakota Rice</td>
-          <td>Minerva</td>
-          <td>Germany</td>
-          <td>
-              <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
-              <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
-             </td>
-        </tr>
-        <tr>
-          <td>Dakota Rice</td>
-          <td>Minerva</td>
-          <td>Germany</td>
-          <td>
-              <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
-              <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
-             </td>
-        </tr>
-        <tr>
-          <td>Dakota Rice</td>
-          <td>Minerva</td>
-          <td>Germany</td>
-          <td>
-              <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
-              <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
-             </td>
-        </tr>
-        <tr>
-          <td>Dakota Rice</td>
-          <td>Minerva</td>
-          <td>Germany</td>
-          <td>
-              <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
-              <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
-             </td>
-        </tr>
-  
-     
-  
+        <td>Dakota Rice</td>
+        <td>Minerva</td>
+        <td>Germany</td>
+        <td>
+          <input type="button" id="edit-button1" value="Edit" class="edit-button" onclick="editRow('1')">
+          <input type="button" value="Delete" class="delete" onclick="deleteRow('1')">
+        </td>
+      </tr>
+      <tr>
+        <td>Dakota Rice</td>
+        <td>Minerva</td>
+        <td>Germany</td>
+        <td>
+          <input type="button" id="edit-button1" value="Edit" class="edit-button" onclick="editRow('1')">
+          <input type="button" value="Delete" class="delete" onclick="deleteRow('1')">
+        </td>
+      </tr>
+      <tr>
+        <td>Dakota Rice</td>
+        <td>Minerva</td>
+        <td>Germany</td>
+        <td>
+          <input type="button" id="edit-button1" value="Edit" class="edit-button" onclick="editRow('1')">
+          <input type="button" value="Delete" class="delete" onclick="deleteRow('1')">
+        </td>
+      </tr>
+      <tr>
+        <td>Dakota Rice</td>
+        <td>Minerva</td>
+        <td>Germany</td>
+        <td>
+          <input type="button" id="edit-button1" value="Edit" class="edit-button" onclick="editRow('1')">
+          <input type="button" value="Delete" class="delete" onclick="deleteRow('1')">
+        </td>
+      </tr>
     </table>
-    
+
   </div>
- 
+
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-content-title">Edit<span class="modal-btn-close"></span></div>
+      <div class="modal-content-body">
+        <form class="modal-content-form">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Country" />
+          <input type="text" placeholder="City" />
+          <div class="modal-content-button">
+            <button class="send modal-button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
-  <footer class="G-TEAM-container G-TEAM-padding-64 G-TEAM-center G-TEAM-black w3-xlarge">
+  <footer class="footer">
     Made by Nqobile
     </p>
   </footer>
-  
-  
-  
-    
-  
-  </script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-  </body>
-  </html>
+
+
+  <script>
+    $(document).ready(function () {
+      // $('.edit-button').click(function () {
+      //   $('.modal').addClass('is-open');
+      // })
+      $('.modal-btn-close, .send').click(function () {
+        $('.modal').removeClass('is-open');
+      })
+    });
+
+    function deleteRow(id) {
+      var result = confirm("Are you sure you want to delete?");
+      if (result) {
+        document.getElementById(id).remove();
+      }
+    }
+
+    function editRow(id) {
+      console.log(id)
+      $('.modal').addClass('is-open');
+    }
+  </script>
+  <!-- <script type="javascript" src="index.js">
+  </script> -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
